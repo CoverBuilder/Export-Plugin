@@ -1,0 +1,31 @@
+{
+  "name": "CoverBuilder/Export-Plugin",
+  "version": "0.1.0",
+  "description": "A tool to export multiple PDFs and JPGs",
+  "main": "export-plugin.js",
+  "scripts": {
+    "buildEnv": "curl https://raw.githubusercontent.com/ES-Collection/build-node-venv/master/build-node-venv.sh > ./.bnv.sh && chmod +x ./.bnv.sh && ./.bnv.sh && rm ./.bnv.sh",
+    "bundle": "exsbundlr --missing -i ./export-plugin.js -o ./staging/com.brunoherfst.export-plugin/export-plugin_Resources/export-plugin.jsxinc",
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoverBuilder/Export-Plugin.git"
+  },
+  "keywords": [
+    "extendscript"
+  ],
+  "contributors": "extendscript.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CoverBuilder/Export-Plugin/issues"
+  },
+  "homepage": "https://github.com/CoverBuilder/Export-Plugin",
+  "devDependencies": {
+    "@extendscript/tap-es": ">=1.0.4",
+    "extendscript-bundlr": ">=0.3.1"
+  },
+  "peerDependencies": {
+    "@extendscript/modules.init": ">=2.1.0"
+  }
+}
