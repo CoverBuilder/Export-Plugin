@@ -1,4 +1,4 @@
-# Export
+# ![icon](icon/EP_icon_32x32.png) Export
 
 > A CoverBuilder Plugin
 
